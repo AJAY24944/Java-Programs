@@ -45,10 +45,10 @@ public class PrimeNumber {
 		System.out.println(obj.isAPrimeNumber(5) ? "Is a Prime Number" : "Is Not a Prime Number");
 		
 		
-//		for(int i=1;i<=100;i++) {
-//			if(obj.isAPrimeNumber(i)) {
-//				System.out.println(i);
-//			}
-//		}
+		for(int i=1;i<=100;i++) {
+			if(obj.isAPrimeNumber(i)) {
+				System.out.println(i);
+			}
+		}
 	}
 }
