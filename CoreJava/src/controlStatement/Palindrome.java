@@ -3,6 +3,7 @@ package controlStatement;
 public class Palindrome {
 	
 	public boolean isPalindrome(int num) {
+		int temp = num;
 		int rev = 0;
 		while(num != 0) {
 			int rem = num%10;
@@ -10,11 +11,13 @@ public class Palindrome {
 			num/=10;
 		}
 		System.out.println(rev);
-		return false;
+		return temp == rev;
 	}
 
 	public static void main(String[] args) {
-		new Palindrome().isPalindrome(12345);
+		
+		Palindrome obj = new Palindrome();
+		System.out.println(obj.isPalindrome(121) ? "Palindrome" : "Not Palindrome");
 	}
 
 }
