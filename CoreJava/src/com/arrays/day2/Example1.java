@@ -1,0 +1,32 @@
+package com.arrays.day2;
+
+import java.util.Arrays;
+
+public class Example1 {
+
+	public static void main(String[] args) {
+		
+		int arr[] = {1,2,3,4,6,2,4,4,2};
+		int max_count=0;
+		int val = arr[0];
+		
+		for(int i=0;i<arr.length;i++) {
+			int count = 0;
+			for(int j=0;j<arr.length;j++) {
+				
+				if(arr[i] == arr[j]) {
+					count+=1;
+				}
+			}
+			if(count > max_count) {
+				max_count = count;
+				val = arr[i];
+			}
+			
+		}
+		System.out.println("Array Elemets : " + Arrays.toString(arr));
+		System.out.println(val);
+
+	}
+
+}
